@@ -1,0 +1,210 @@
+﻿body {
+    background-color: #39acf9;
+    background-image: url("../image/newbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -90%;
+}
+
+    #content {
+        width: 800px;
+        height: 500px;
+        background: #ffffff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -400px;
+        margin-top: -250px;
+        box-shadow: 0 6px 13px 0 rgba(0,0,0,.1);
+        border-radius:10px;
+    }
+
+        #left {
+            width: 250px;
+            background: #f8fcff;
+            height: 500px;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            float:left;
+        }
+
+            #logo {
+                text-decoration: none;
+                color: #3ca2f2;
+                display: block;
+                font-size: 32px;
+                float: left;
+                font-weight: bolder;
+                text-align:center;
+                width:250px;
+                margin-top:50px;
+                float:left;
+            }
+
+            #left .item {
+                height: 50px;
+                width: 250px;
+                background: url("../image/sign-slide.png");
+                background-repeat: no-repeat;
+                background-position-x: 40px;
+                background-position-y: 8px;
+                float: left;
+                padding-left: 100px;
+                margin-top: 80px;
+            }
+
+                #left .item:nth-child(3) {
+                    background-position-y: -55px;
+                }
+
+                #left .item span {
+                    display: block;
+                    height: 30px;
+                    color: #808080;
+                    font-weight: bolder;
+                }
+
+                #left .item span:nth-child(2) {
+                    font-size: 13px;
+                    color: #b1b1b1;
+                    font-weight: normal;
+                }
+
+    #right{
+        padding-top:80px;
+        width:450px;
+        padding-left:100px;
+        float:left;
+    }
+
+        #right .title{
+            font-size:20px;
+            height:50px;
+            line-height:50px;
+            color:#39acf9;
+            display:block;
+            width:350px;
+            text-align:center;
+            border-bottom:2px solid #39acf9;
+            font-weight:bold;
+            margin-bottom:50px;
+        }
+
+.tb {
+    border: 1px solid #e3e7ed;
+    margin-bottom: 30px;
+    padding-left:50px;
+}
+
+    .tb:focus {
+        border-color: #39acf9;
+    }
+
+    .tb::-webkit-input-placeholder{
+        color:#bcbcbc
+    }
+
+    #TextBox1 {
+        background: url("../image/user.png");
+        background-position: 12px 10px;
+        background-repeat: no-repeat;
+    }
+
+        #TextBox1:focus {
+            background: url("../image/user_focus.png");
+            background-position: 12px 10px;
+            background-repeat: no-repeat;
+        }
+
+    #TextBox2 {
+        background: url("../image/icons-sign.png");
+        background-position: 12px -80px;
+        background-repeat: no-repeat;
+    }
+
+        #TextBox2:focus {
+            background: url("../image/icons-sign.png");
+            background-position: 12px -265px;
+            background-repeat: no-repeat;
+        }
+
+.btn{
+    text-decoration:none;
+    text-align:center;
+    line-height:40px;
+    margin-bottom:30px;
+}
+
+        .bottom{
+            float:right;
+        }
+
+            .bottom span {
+                color:#b1b1b1;
+            }
+
+            .bottom a{
+                text-decoration:none;
+                color:#39acf9;
+            }
+
+        #login {
+            width: 350px;
+            float: left;
+        }
+
+        #register{
+            width:350px;
+            margin-top:-45px;
+            float:left;
+        }
+
+            #TextBox3 {
+                background: url("../image/user.png");
+                background-position: 12px 10px;
+                background-repeat: no-repeat;
+            }
+
+                #TextBox3:focus {
+                    background: url("../image/user_focus.png");
+                    background-position: 12px 10px;
+                    background-repeat: no-repeat;
+                }
+
+            #TextBox4 {
+                background: url("../image/icons-sign.png");
+                background-position: 12px -80px;
+                background-repeat: no-repeat;
+            }
+
+                #TextBox4:focus {
+                    background: url("../image/icons-sign.png");
+                    background-position: 12px -265px;
+                    background-repeat: no-repeat;
+                }
+
+            #TextBox5 {
+                background: url("../image/icons-sign.png");
+                background-position: 12px 12px;
+                background-repeat: no-repeat;
+            }
+
+                #TextBox5:focus {
+                    background: url("../image/icons-sign.png");
+                    background-position: 12px -175px;
+                    background-repeat: no-repeat;
+                }
+
+        .validators{
+            padding-top:55px;
+        }
+
+        #Panel1 .validators {
+            padding-top:100px;
+        }
+
+            .validator {
+                width: 99px;
+                float: right;
+                margin-bottom: 30px;
+            }

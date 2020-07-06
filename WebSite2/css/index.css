@@ -1,0 +1,401 @@
+﻿#container{
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+    .pic {
+        margin-top:40px;
+        height: 290px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .content {
+        width: 99999px;
+        height: 290px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+        .content img {
+            float: left;
+        }
+
+    .index {
+        position: absolute;
+        left: 40%;
+        bottom: 5px;
+        width: 200px;
+        height: 20px;
+        list-style: none;
+    }
+
+        .index li {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            float: left;
+            margin-left: 10px;
+            background-color: rgba(100,100,100,0.3);
+        }
+
+    #left {
+        width: 30px;
+        height: 50px;
+        background-color: rgba(100,100,100,0.5);
+        position: absolute;
+        left: 0px;
+        top: 120px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 20px;
+        color: #fff;
+        display: none;
+    }
+
+    #right {
+        width: 30px;
+        height: 50px;
+        background-color: rgba(100,100,100,0.5);
+        position: absolute;
+        right: 0px;
+        top: 120px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 20px;
+        color: #fff;
+        display: none;
+    }
+
+    .index .first {
+        background-color: red;
+    }
+
+    #search{
+        margin-top:40px;
+        width:920px;
+        margin-right:auto;
+        margin-left:auto;
+        height:50px;
+        position:relative;
+        margin-bottom:60px;
+    }
+
+        #hot{
+            position:absolute;
+            top:60px;
+        }
+
+            #hot a, #hot a:visited {
+                font-size:14px;
+                color: #61687c;
+                margin-right:20px;
+                text-decoration:none;
+            }
+
+            #hot a:first-child ~ a:hover {
+                color: #3ca2f2;
+            }
+
+        .tbContent {
+            padding-left: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: 0 0 6px 0 #61687c;
+            color: gray;
+        }
+
+        .tbContent:focus{
+            box-shadow:0 0 4px 0 #3ca2f2
+        }
+
+        .btnSearch {
+            position: absolute;
+            top: -1px;
+            right: 0;
+        }
+
+    .git{
+        background-color:white;
+        margin-top:40px;
+        height:364px;
+    }
+
+        .left {
+            border-top: 4px solid #3ca2f2;
+            width: 250px;
+            float:left;
+        }
+
+            .left .leftTop{
+                margin-top:20px;
+                width:200px;
+                height:50px;
+                margin-left:25px;
+                position:relative;
+            }
+
+                .left .logo {
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    left: 25px;
+                    top: 5px;
+                    background: url(../image/icons.png);
+                    background-position: 1010px,0px;
+                }
+
+                .left .title {
+                    color: #3ca2f2;
+                    position:absolute;
+                    left: 65px;
+                    top: -20px;
+                }
+
+            .left .part {
+                border-top: 1px solid #cdcccc;
+                height:155px;
+                width: 200px;
+                margin-left: 25px;
+            }
+
+                .left .part a:link, .left .part a:visited {
+                    float:right;
+                    display:block;
+                    width:100px;
+                    text-decoration:none;
+                    color:#494646;
+                    margin-top:10px;
+                }
+
+                .left .part a:hover {
+                    color: #3ca2f2;
+                }
+
+        .git:nth-child(2) .left{
+            border-top: 4px solid #ef434c;
+        }
+
+            .git:nth-child(2) .left .logo {
+                background-position: 1272px,0px;
+            }
+
+            .git:nth-child(2) .left .title {
+                color: #ef434c;
+            }
+
+                    .git:nth-child(2) .left .part a:hover {
+                        color: #ef434c;
+                    }
+
+        .git:nth-child(3) .left {
+        border-top: 4px solid #fdc00f;
+        }
+
+            .git:nth-child(3) .left .logo {
+            background-position: 720px,0px;
+            }
+
+            .git:nth-child(3) .left .title {
+            color: #fdc00f;
+            }
+
+                    .git:nth-child(3) .left .part a:hover {
+                    color: #fdc00f;
+                    }
+
+        .git:nth-child(4) .left {
+            border-top: 4px solid #6f4ab9;
+        }
+
+            .git:nth-child(4) .left .logo {
+                background-position: 575px,0px;
+            }
+
+            .git:nth-child(4) .left .title {
+                color: #6f4ab9;
+            }
+
+                    .git:nth-child(4) .left .part a:hover {
+                        color: #6f4ab9;
+                    }
+
+        .git:nth-child(5) .left {
+            border-top: 4px solid #0267f5;
+        }
+
+            .git:nth-child(5) .left .logo {
+                background-position: 192px,0px;
+            }
+
+            .git:nth-child(5) .left .title {
+                color: #0267f5;
+            }
+
+                    .git:nth-child(5) .left .part a:hover {
+                        color: #0267f5;
+                    }
+
+        .git:nth-child(6) .left {
+            border-top: 4px solid #50b26b;
+            height:364px;
+        }
+
+            .git:nth-child(6) .left .logo {
+                background-position: 1100px,0px;
+            }
+
+            .git:nth-child(6) .left .title {
+                color: #50b26b;
+            }
+
+                    .git:nth-child(6) .left .part a:hover {
+                        color: #50b26b;
+                    }
+
+        .right {
+            width: 749px;
+            float: right;
+            border-bottom: solid 1px #cdcccc;
+            border-right: solid 1px #cdcccc;
+        }
+
+            .right .littlePart {
+                color: #61687c;
+                width: 373.5px;
+                height: 120px;
+                float: left;
+                border-top: solid 1px #cdcccc;
+                border-left: solid 1px #cdcccc;
+            }
+
+                .right .position {
+                    height: 80px;
+                    position: relative;
+                }
+
+                    .right .position .salary {
+                        color: #fc6c38;
+                        position:absolute;
+                        right:36px;
+                        top:15px;
+                    }
+
+                    .right .position .positionName {
+                        position: absolute;
+                        left: 37px;
+                        top: 15px;
+                    }
+
+                    .right .position .info {
+                        font-size:12px;
+                        position: absolute;
+                        left: 37px;
+                        top: 55px;
+                    }
+
+                .right .littlePart a:link, .right .littlePart a:visited {
+                    color: #61687c;
+                    text-decoration:none;
+                }
+
+                .right .littlePart a:hover {
+                    color: #3ca2f2;
+                }
+
+                .git:nth-child(2) .right .littlePart a:hover {
+                    color: #ef434c;
+                }
+
+                .git:nth-child(3) .right .littlePart a:hover {
+                    color: #fdc00f;
+                }
+
+                .git:nth-child(4) .right .littlePart a:hover {
+                    color: #6f4ab9;
+                }
+
+                .git:nth-child(5) .right .littlePart a:hover {
+                    color: #0267f5;
+                }
+
+                .git:nth-child(6) .right .littlePart a:hover {
+                    color: #50b26b;
+                }
+
+                .git:nth-child(6) {
+                    position: relative;
+                }
+
+                .git:nth-child(6) .right{
+                    position:absolute;
+                    right:0;
+                    top:0;
+                }
+
+                .right .littlePart .company {
+                    margin-left: 37px;
+                    border-top: dashed 1px #cdcccc;
+                    width: 300px;
+                    height: 40px;
+                    position: relative;
+                }
+
+                    .right .littlePart .company img{
+                        width:30px;
+                        height:30px;
+                        border-radius:15px;
+                        position:absolute;
+                        left:0;
+                        top:5px;
+                    }
+
+                    .right .littlePart .company a {
+                        position: absolute;
+                        left: 50px;;
+                        top: 8px;
+                    }
+    
+    #city{
+        margin-bottom:60px;
+        height:154px;
+    }
+
+        #city a{
+            display:block;
+            width:160px;
+            height:77px;
+            float:left;
+            margin-right:8px;
+            margin-bottom:8px;
+            position:relative;
+        }
+
+        #city a:before {
+            content:"";
+            display:block;
+            width: 160px;
+            height: 77px;
+            background:black;
+            position:absolute;
+            left:0;
+            top:0;
+            opacity:0;
+        }
+
+        #city a:hover:before {
+            opacity: 0.3;
+        }
+
+        #city a:nth-child(6n) {
+            margin-right: 0px;
+        }
+
+        #cityTitle {
+            font-weight:500;
+            margin-top:40px;
+            color: #1D81C7;
+        }

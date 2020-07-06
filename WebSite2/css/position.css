@@ -1,0 +1,213 @@
+﻿.position {
+    margin-right:auto;
+    margin-left:auto;
+    width:1000px;
+    height: 230px;
+    position:relative;
+}
+
+    .position .companyName{
+        position:absolute;
+        left:0px;
+        top:40px;
+        color:#565252;
+    }
+
+    .position .positionName {
+        position: absolute;
+        left: 0px;
+        top: 60px;
+        font-size:36px;
+        color: #191818;
+    }
+
+    .position .salary {
+        position: absolute;
+        left: 0px;
+        top: 115px;
+        font-size: 24px;
+        color: #fd5f39;
+    }
+
+    .position .info {
+        position: absolute;
+        left: 100px;
+        top: 115px;
+        font-size: 24px;
+        color: #565252;
+    }
+
+    .collect{
+        text-decoration:none;
+        color:#3ca2f2;
+        width:80px;
+        height:40px;
+        line-height:40px;
+        border:1px solid #3ca2f2;
+        position:absolute;
+        top:110px;
+        text-align:right;
+        right:200px;
+        padding-right:20px;
+        border-radius:5px;
+    }
+
+    .collecting{
+        position:absolute;
+        top:120px;
+        right:263px;
+    }
+    
+    .tag {
+        position: absolute;
+        left: 0px;
+        top: 165px;
+    }
+    
+        .tag a {
+            font-size:12px;
+            border:1px solid #3ca2f2;
+            line-height:30px;
+            margin-right: 5px;
+            text-align: center;
+            background: #edf9ff;
+            border-radius: 10px;
+            float: left;
+            display: block;
+            height: 30px;
+            width: 80px;
+            color: #3ca2f2;
+        }
+
+#detailBg {
+    width: 100%;
+    background: #ffffff;
+    padding-top: 20px;
+}
+
+    #detail {
+        position:relative;
+        width:1000px;
+        margin-right:auto;
+        margin-left:auto;
+        padding-bottom:50px;
+    }
+
+        #pDetail {
+            width: 699px;
+            border-right: 1px solid #808080;
+        }
+
+            #pDetail h4 {
+                padding-bottom:5px;
+                width:65px;
+                border-bottom: 2px solid #3ca2f2;
+            }
+
+            #pDetail div {
+                font-size:14px;
+                line-height:40px;
+                color: #565252;
+                margin-right:30px;
+            }
+
+        #cDetail {
+            width: 300px;
+            position:absolute;
+            right:0;
+            top:0;
+        }
+
+            #cDetail h2 {
+                margin-top:0px;
+                width:148px;
+                margin-left: 30px;
+                margin-bottom:40px;
+                border-bottom: 2px solid #3ca2f2;
+            }
+
+            #cDetail #head{
+                margin-left:30px;
+                float:left;
+            }
+
+            #cDetail #cName{
+                float:left;
+                margin-left:20px;
+                margin-bottom:60px;
+            }
+
+            #cDetail p {
+                clear: both;
+                position: relative;
+                width: 240px;
+                margin-left: 30px;
+                padding-left: 30px;
+                height: 30px;
+            }
+
+            #cDetail p img {
+                width:16px;
+                height:15px;
+                position:absolute;
+                top:4px;
+                left:0;
+            }
+            
+#comment
+{
+    padding-top:50px;
+    background:#ffffff;
+    border-bottom: 1px solid #808080;
+    padding-bottom:80px;
+}
+
+    #commentInput
+    {
+       width: 1000px;
+       margin-left:auto;
+       margin-right:auto;
+    }
+    
+        .btnSearch
+        {
+            margin-left:40px;
+        }
+        
+        .commentItem
+        {
+            position:relative;
+            height:200px;
+            width:1000px;
+            border-bottom: 1px solid #808080;
+            padding-bottom:10px;
+        }
+        
+            .commentItem img
+            {
+                position:absolute;
+                top:50px;
+                border-radius:25px;
+            }
+            
+            .commentItem span
+            {
+                position:absolute;
+                top:65px;
+                left:70px;
+            }
+            
+            .commentItem a
+            {
+                position:absolute;
+                top:65px;
+                right:0;
+                color:#808080;
+            }
+            
+            .commentItem p
+            {
+                position:absolute;
+                top:130px;
+                left:70px;
+            }

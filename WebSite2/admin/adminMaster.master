@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/headFoot.master" AutoEventWireup="true" CodeFile="adminMaster.master.cs" Inherits="admin_adminMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <link href="../css/adminMaster.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" Runat="Server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <div id="content">
+        <div id="verticalNav">
+            <div id="logo"></div>
+            <h2 id="title">后台管理</h2>
+            <div><asp:HyperLink ID="HyperLink1" NavigateUrl="adminDefault.aspx" runat="server">后台首页</asp:HyperLink></div>
+            <div><asp:HyperLink ID="HyperLink2" NavigateUrl="adminInsert.aspx" runat="server">发布招聘</asp:HyperLink></div>
+            <div><asp:HyperLink ID="HyperLink3" NavigateUrl="adminUpdate.aspx" runat="server">更新招聘</asp:HyperLink></div>
+            <div><asp:HyperLink ID="HyperLink4" NavigateUrl="adminDelete.aspx" runat="server">删除招聘</asp:HyperLink></div>
+            <div><asp:HyperLink ID="HyperLink5" NavigateUrl="adminComment.aspx" runat="server">评论管理</asp:HyperLink></div>
+        </div>
+        <asp:ContentPlaceHolder ID="right" Runat="Server"></asp:ContentPlaceHolder>
+    </div>
+</asp:Content>
+

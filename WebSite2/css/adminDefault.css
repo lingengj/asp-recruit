@@ -1,0 +1,73 @@
+﻿.pName, .pName:visited {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #808080;
+}
+
+.pName:hover {
+    color: #3ca2f2;
+}
+
+.pageNum {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    display: block;
+    height: 80px;
+    line-height: 80px;
+}
+
+    .pageNum a {
+        text-decoration: none;
+        display: block;
+        margin-left: 20px;
+        color: #333232
+    }
+
+        .pageNum a:hover {
+            color: #3ca2f2;
+        }
+
+    .pageNum span {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+        line-height: 30px;
+        text-align: center;
+        background: #3ca2f2;
+        color: #ffffff;
+    }
+
+#search {
+    margin-top: 40px;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 50px;
+    position: relative;
+    margin-bottom: 40px;
+    float: right;
+}
+
+    .tbContent {
+        padding-left: 20px;
+        position: absolute;
+        top: 0;
+        left: 50px;
+        box-shadow: 0 0 3px 0 #61687c;
+        color: gray;
+    }
+
+    .tbContent:focus {
+        box-shadow: 0 0 4px 0 #3ca2f2
+    }
+
+    .btnSearch {
+        position: absolute;
+        top: -1px;
+        right: 70px;
+    }

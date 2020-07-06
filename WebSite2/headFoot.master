@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="headFoot.master.cs" Inherits="css_headFoot" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="css/headFoot.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="top">
+            <div id="conTop">
+                <asp:HyperLink ID="logo" NavigateUrl="~/index.aspx" runat="server">招&nbsp&nbsp 聘</asp:HyperLink>
+                <asp:Menu ID="nav" runat="server" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/index.aspx" Text="首页" Value="首页"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/positions.aspx" Text="职位" Value="职位"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="#" Text="公司" Value="公司"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+                <asp:HyperLink ID="AdminDefault" Visible="false" NavigateUrl="~/admin/adminDefault.aspx" runat="server">管理员首页</asp:HyperLink>
+                <asp:Panel ID="Panel1" runat="server">
+                    <asp:HyperLink ID="login" runat="server" Text="登录"></asp:HyperLink>
+                    <span id="line"> | </span>
+                    <asp:HyperLink ID="register" runat="server" Text="注册"></asp:HyperLink>
+                </asp:Panel>
+                <asp:Panel ID="Panel2" Visible="false" runat="server">
+                    <asp:Image ID="Image1" ImageUrl="~/image/user.jpeg" runat="server" Width="30px" Height="30px" />
+                    <asp:LinkButton ID="LinkButton1" OnClick="Exit_Click" runat="server">退出</asp:LinkButton>
+                    <asp:HyperLink ID="HyperLink1" runat="server"></asp:HyperLink>
+                </asp:Panel>
+            </div>
+        </div>
+        <div id="slide">
+            <div id="slideL">
+                <asp:Image ID="Image2" ImageUrl="~/image/icon.png" runat="server" Width="20px" Height="20px" />
+                <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">收藏</asp:LinkButton>
+                <a id="returnTop" href="javascript:scroll(0,0)">></a> 
+                <div id="qq"></div>
+                <div id="wechat"></div>
+                <div id="sina"></div>
+            </div>
+            <asp:Panel ID="slideR" runat="server" Visible="false">
+                <div id="collectTitle">收藏</div>
+                <asp:DataList ID="DataList1" runat="server">
+                    <ItemTemplate>
+                        <div class="colPo">
+                            <asp:HyperLink ID="HyperLink2" NavigateUrl='<%# "~/position.aspx?id="+DataBinder.Eval(Container.DataItem,"id") %>' CssClass="poName" runat="server"><%#Eval("name") %></asp:HyperLink>
+                            <div class="poSalary"><%#Eval("salary") %></div>
+                        </div>
+                    </ItemTemplate>
+                </asp:DataList>
+            </asp:Panel>
+        </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            
+        </asp:ContentPlaceHolder>
+        <div id="foot">
+            <div id="width">
+                <div class="foot">
+                    <span>关于我们</span>
+                    <div><a href="#">关于我们</a></div>
+                    <div><a href="#">联系我们</a></div>
+                    <div><a href="#">人力头条</a></div>
+                </div>
+                <div class="foot">
+                    <span>企业服务</span>
+                    <div><a href="#">职位搜索</a></div>
+                    <div><a href="#">新闻资讯</a></div>
+                    <div><a href="#">招聘APP</a></div>
+                </div>
+                <div class="foot">
+                    <span>使用与帮助</span>
+                    <div><a href="#">用户协议与隐私政策</a></div>
+                    <div><a href="#">防骗指南</a></div>
+                    <div><a href="#">使用帮助</a></div>
+                </div>
+                <div class="foot">
+                    <span>招聘</span>
+                    <p>举报投诉&nbsp 012 345 6789</p>
+                    <p>工作日  &nbsp&nbsp&nbsp 8:00-22:00</p>
+                    <p>休息日  &nbsp&nbsp&nbsp 9:30-18:30</p>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
